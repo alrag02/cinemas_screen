@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Cinemas_Hnry
 {
-    public partial class Form1 : Form
+    public partial class frm_login : Form
     {
-        public Form1()
+        public frm_login()
         {
             InitializeComponent();
         }

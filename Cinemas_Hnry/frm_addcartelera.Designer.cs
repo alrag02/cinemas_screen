@@ -35,6 +35,8 @@
             this.txt_Bu = new System.Windows.Forms.TextBox();
             this.tabla_funcion = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_hora = new System.Windows.Forms.TextBox();
             this.cmb_ano = new System.Windows.Forms.ComboBox();
             this.cmb_mes = new System.Windows.Forms.ComboBox();
             this.cmb_dia = new System.Windows.Forms.ComboBox();
@@ -52,8 +54,6 @@
             this.btn_Agregar = new System.Windows.Forms.Button();
             this.btn_Modificar = new System.Windows.Forms.Button();
             this.btn_new = new System.Windows.Forms.Button();
-            this.txt_hora = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.tab_cartelera.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabla_funcion)).BeginInit();
@@ -62,7 +62,7 @@
             // 
             // btn_Close
             // 
-            this.btn_Close.Location = new System.Drawing.Point(42, 326);
+            this.btn_Close.Location = new System.Drawing.Point(12, 10);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(75, 23);
             this.btn_Close.TabIndex = 3;
@@ -74,10 +74,10 @@
             // 
             this.tab_cartelera.Controls.Add(this.tabPage1);
             this.tab_cartelera.Controls.Add(this.tabPage2);
-            this.tab_cartelera.Location = new System.Drawing.Point(38, 20);
+            this.tab_cartelera.Location = new System.Drawing.Point(12, 39);
             this.tab_cartelera.Name = "tab_cartelera";
             this.tab_cartelera.SelectedIndex = 0;
-            this.tab_cartelera.Size = new System.Drawing.Size(674, 300);
+            this.tab_cartelera.Size = new System.Drawing.Size(726, 300);
             this.tab_cartelera.TabIndex = 2;
             // 
             // tabPage1
@@ -89,7 +89,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(666, 274);
+            this.tabPage1.Size = new System.Drawing.Size(718, 274);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cartelera";
             // 
@@ -107,7 +107,7 @@
             // 
             this.txt_Bu.Location = new System.Drawing.Point(270, 6);
             this.txt_Bu.Name = "txt_Bu";
-            this.txt_Bu.Size = new System.Drawing.Size(373, 20);
+            this.txt_Bu.Size = new System.Drawing.Size(442, 20);
             this.txt_Bu.TabIndex = 4;
             this.txt_Bu.TextChanged += new System.EventHandler(this.txt_Bu_TextChanged);
             // 
@@ -115,10 +115,10 @@
             // 
             this.tabla_funcion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.tabla_funcion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabla_funcion.Location = new System.Drawing.Point(18, 32);
+            this.tabla_funcion.Location = new System.Drawing.Point(6, 32);
             this.tabla_funcion.Name = "tabla_funcion";
             this.tabla_funcion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tabla_funcion.Size = new System.Drawing.Size(625, 207);
+            this.tabla_funcion.Size = new System.Drawing.Size(706, 236);
             this.tabla_funcion.TabIndex = 0;
             this.tabla_funcion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_peliculas_CellContentClick);
             // 
@@ -145,10 +145,27 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(666, 274);
+            this.tabPage2.Size = new System.Drawing.Size(718, 274);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Agregar/Editar";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(31, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Fecha";
+            // 
+            // txt_hora
+            // 
+            this.txt_hora.Location = new System.Drawing.Point(235, 86);
+            this.txt_hora.Name = "txt_hora";
+            this.txt_hora.Size = new System.Drawing.Size(100, 20);
+            this.txt_hora.TabIndex = 39;
+            this.txt_hora.Text = "00:00";
             // 
             // cmb_ano
             // 
@@ -248,7 +265,7 @@
             // 
             // btn_Borrar
             // 
-            this.btn_Borrar.Location = new System.Drawing.Point(585, 245);
+            this.btn_Borrar.Location = new System.Drawing.Point(637, 245);
             this.btn_Borrar.Name = "btn_Borrar";
             this.btn_Borrar.Size = new System.Drawing.Size(75, 23);
             this.btn_Borrar.TabIndex = 3;
@@ -349,7 +366,7 @@
             // 
             // btn_new
             // 
-            this.btn_new.Location = new System.Drawing.Point(174, 326);
+            this.btn_new.Location = new System.Drawing.Point(644, 12);
             this.btn_new.Name = "btn_new";
             this.btn_new.Size = new System.Drawing.Size(90, 23);
             this.btn_new.TabIndex = 4;
@@ -357,29 +374,12 @@
             this.btn_new.UseVisualStyleBackColor = true;
             this.btn_new.Click += new System.EventHandler(this.btn_new_Click);
             // 
-            // txt_hora
-            // 
-            this.txt_hora.Location = new System.Drawing.Point(235, 86);
-            this.txt_hora.Name = "txt_hora";
-            this.txt_hora.Size = new System.Drawing.Size(100, 20);
-            this.txt_hora.TabIndex = 39;
-            this.txt_hora.Text = "00:00";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "Fecha";
-            // 
             // frm_addcartelera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(750, 369);
+            this.ClientSize = new System.Drawing.Size(750, 349);
             this.ControlBox = false;
             this.Controls.Add(this.btn_new);
             this.Controls.Add(this.btn_Close);

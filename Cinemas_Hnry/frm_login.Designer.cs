@@ -1,6 +1,6 @@
 ﻿namespace Cinemas_Hnry
 {
-    partial class Form1
+    partial class frm_login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_login));
             this.button1 = new System.Windows.Forms.Button();
             this.txt_Contraseña = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();

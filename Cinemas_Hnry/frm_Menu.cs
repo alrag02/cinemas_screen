@@ -23,7 +23,7 @@ namespace Cinemas_Hnry
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            frm_login f1 = new frm_login();
             f1.Show();
             Close();
         }
